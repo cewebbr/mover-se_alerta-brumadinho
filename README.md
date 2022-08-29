@@ -10,26 +10,7 @@
 O projeto Alerta Brumadinho - Solução Tecnológica para Denúncia de Crimes Ambientais em Brumadinho, Minas Gerais faz parte da chamada pública [CGI.br/NIC.br/Ceweb.br nº 01/2019
 Mover-Se na Web – Articulação Pró-Brumadinho](https://ceweb.br/projetos/chamada.html)
 
-<p>Abaixo, liste a licença/s para o projeto. Lembre-se que todas as soluções devem possuir uma licença de código aberto, assim como todos os produtos produzidos com o aporte oferecido pelo Ceweb.br | NIC.br | CGI.br. </p>
-
-
-# Escolhendo a licença para o projeto 
-
-Uma vez definida, exclua essa seção, deixando apenas a indicação do "badge" da licença e o arquivo `LICENSE` dentro do repositório.
-
-Saiba mais sobre licenças de software:
-- [Como escolher uma licença para seu projeto
-](https://www.alura.com.br/artigos/como-escolher-uma-licenca-para-seu-projeto)
-- [Choose an open source license](https://choosealicense.com/)
-- [Como escolher uma licença para sua própria obra](https://www.gnu.org/licenses/license-recommendations.pt-br.html)
-
-Exemplo - MIT License
-
-[![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mas-cli/mas/blob/main/LICENSE)
-
-Os badges podem ser criados ou retirados do [License Shields](https://shields.io/category/license)
-
-<br/>
+[![Software License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/lucasvribeiro/mover-se_alerta-brumadinho)
 
 #  Descrição da solução
 
