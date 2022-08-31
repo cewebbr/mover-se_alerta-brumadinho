@@ -42,9 +42,10 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 
 ### Papéis dentro da plataforma
 
--  Usuário: Uma breve descrição sobre os papeis do usuário na operação do sistema.
--  Moderador: Uma breve descrição sobre os papeis do Moderador na operação do sistema.
--  Administrador: Uma breve descrição sobre os papeis do Administrador na operação do sistema.
+-  Usuário: To do...
+-  Moderador: To do (realiza a curadoria das publicações)...
+-  Órgão Público Ambiental: To do...
+-  Administrador: To do...
 
 #  Instalação
 
