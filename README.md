@@ -12,21 +12,35 @@ Mover-Se na Web – Articulação Pró-Brumadinho](https://ceweb.br/projetos/cha
 
 [![Software License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/lucasvribeiro/mover-se_alerta-brumadinho)
 
-#  Descrição da solução
+#  Descrição do Projeto
 
-Aqui você deve adicionar uma descrição do projeto. Texto corrido, não maior que ~600 caracteres e/ou ~100 palavras.
+O projeto Alerta Brumadinho é uma plataforma voltada para a população de Brumadinho registrar ocorrências que agridem de alguma forma o meio-ambiente do município. O objetivo da plataforma é servir como um portal onde a população pode expor problemas ambientais que estejam ocorrendo no município a fim de dar maior visibilidade a esses problemas. Também é possível, através da plataforma, que o órgão ambiental responsável pelo município interaja com aquilo que está sendo publicado pelos usuários, de modo a proporcionar, quando necessário, uma interação entre o setor público do município e a população.
+
+Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as publicações feitas pelos usuários sejam aferidas antes de se tornarem públicas, com intuito de não permitir a publicação de conteúdos como nudez e pornografia, incitação à violência, discurso de ódio, etc. 
 
 ### Funcionalidades ativas
+- [x] Cadastro de usuário comum
+- [x] Recuperação de senha do usuário
+- [x] Solicitação de cadastro de órgão ambiental
+- [x] Linha do tempo das publicações
+- [x] Busca de publicação por código identificador
+- [x] Ordenação das publicações por "Mais recentes" ou "Mais relevantes"
+- [x] Cadastro de nova publicação
+- [x] Interação nas publicações da linha do tempo: Curtir e Comentar
+- [x] Interação nos comentários das publicações: Curtir
+- [x] Validar publicação (disponível apenas para usuários com permissão de validação)
 
-- [x] Cadastro de criação de usuário
-- [x] Cadastro de Denúncia
-- [x] Cadastro de uma fonte
+
 
 ### Funcionalidades em desenvolvimento
-- [x] Moderação de comentários
-- [x] Moderação de ativos
+- [ ] Tela para visualização de uma publicação específica
+- [ ] Compartilhamento de publicação em outros canais sociais (Whatsapp, Facebook, etc)
+- [ ] Configuração do PWA da aplicação
+- [ ] Notificações no browser
+- [ ] Definição dos Termos de Uso e Política de Uso de Dados
+- [ ] Envio de e-mails de notificação em alguns cenários específicos
 
-### Papeis e suas descrições
+### Papéis dentro da plataforma
 
 -  Usuário: Uma breve descrição sobre os papeis do usuário na operação do sistema.
 -  Moderador: Uma breve descrição sobre os papeis do Moderador na operação do sistema.
@@ -34,61 +48,7 @@ Aqui você deve adicionar uma descrição do projeto. Texto corrido, não maior 
 
 #  Instalação
 
-### Tecnologias utilizadas
-
-Liste aqui as tecnologias utilizadas no projeto como o modelo abaixo.
-
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-
-
-## Executando a aplicação
-
-### Pré-requisitos (Software e/ou Hardware)
-
-Liste aqui todos os pré-requisitos no modelo abaixo.
-
-- [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/). 
-
-
-### 1. No terminal
-
-```bash
-# Clone este repositório
-$ git clone https://github.com/cewebbr/template_mover-se
-
-# Acesse a pasta do projeto no terminal
-$ cd template_mover-se
-
-# Crie um arquivo `.env` na raiz do projeto
-
-$ cp .env-exemple .env
-
-# Instale as dependências
-$ pip install -r requirements.txt
-
-```
-
-###  2. Configuração das variáveis de ambientes
-
-Abra o arquivo `.env` na raiz do projeto e configure as variáveis de ambiente
-
-```
-twitter_api_key=""
-twitter_api_secret=""
-secret=""
-DATABASE_URL=""
-```
-###  3. Executando a aplicação
-```bash
-# Execute a aplicação em modo de desenvolvimento
-$ python server.py
-
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
-```
-
-</br>
+To do....
 
 #### Solução de problemas
 
@@ -98,12 +58,11 @@ Descreva aqui caso existam problemas conhecidos, como pacotes, conflitos entre v
 
 ### Equipe responsável pelo projeto 
 
-- Ana Maria         - UFRJ - Coordenadora - ana@email.com.br
-- João da Silva     - UFMG - Pessoa desenvolvedora - joao@email.com.br
-- Luciana de Souza  - UFPR - Pessoa desenvolvedora - luciana@email.com.br
+- Lucas Vinicius Ribeiro    - UTFPR - Coordenador - lucasvribeiro14@gmail.com
+- Lucas Souza Santos        - UTFPR - Desenvolvedor - **todo...**
+- Igor Scaliante Wiese      - UTFPR - Desenvolvedor - igor.wiese@gmail.com
 
 </br>
-
 
 # Sobre o [Ceweb.br](https://ceweb.br/sobre-o-ceweb-br/), [NIC.br](https://www.nic.br/sobre/) e [CGI.br](https://cgi.br/sobre/)
 
