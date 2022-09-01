@@ -19,8 +19,10 @@ O projeto Alerta Brumadinho é uma plataforma voltada para a população de Brum
 Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as publicações feitas pelos usuários sejam aferidas antes de se tornarem públicas, com intuito de não permitir a publicação de conteúdos como nudez e pornografia, incitação à violência, discurso de ódio, etc. 
 
 ### Funcionalidades ativas
-- [x] Cadastro de usuário comum
+- [x] Cadastro de usuário
 - [x] Recuperação de senha do usuário
+- [x] Acessar sem cadastro
+- [x] Fazer login de usuário e órgão ambiental
 - [x] Solicitação de cadastro de órgão ambiental
 - [x] Linha do tempo das publicações
 - [x] Busca de publicação por código identificador
@@ -29,7 +31,6 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 - [x] Interação nas publicações da linha do tempo: Curtir e Comentar
 - [x] Interação nos comentários das publicações: Curtir
 - [x] Validar publicação (disponível apenas para usuários com permissão de validação)
-
 
 
 ### Funcionalidades em desenvolvimento
@@ -42,14 +43,18 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 
 ### Papéis dentro da plataforma
 
--  Usuário: To do...
--  Moderador: To do (realiza a curadoria das publicações)...
--  Órgão Público Ambiental: To do...
--  Administrador: To do...
+-  Usuário: população de Brumadinho em geral, que pode acessar a plataforma, interagir e criar publicações.
+-  Moderador: usuários específicos que possuem permissão de aferir publicações que estejam pendentes (Aprovar ou Descartar).
+-  Órgão Público Ambiental: tipo de usuário destinado ao órgão do município que pode interagir nas publicações dos usuários.
+-  Administrador: usuário que possui o maior nível de permissões dentro da plataforma.
 
 #  Instalação
 
-To do....
+Este repositório está subdividido em dois projetos: frontend e backend. O primeiro foi desenvolvido em React e é responsável por toda a interface de usuário do projeto, enquanto o segundo foi desenvolvido em Node, Express e Mongo, e é responsável pelo gerenciamento de toda a API do sistema.
+
+Dessa forma, os processos de instalação e execução de cada um dos projetos (frontend e backend) estão descritos nos seus respectivos diretórios:
+- [Documentação do Front-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/frontend/README.md)
+- [Documentação do Back-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/backend/README.md)
 
 #### Solução de problemas
 
@@ -60,7 +65,7 @@ Descreva aqui caso existam problemas conhecidos, como pacotes, conflitos entre v
 ### Equipe responsável pelo projeto 
 
 - Lucas Vinicius Ribeiro    - UTFPR - Coordenador - lucasvribeiro14@gmail.com
-- Lucas Souza Santos        - UTFPR - Desenvolvedor - **todo...**
+- Lucas Souza Santos        - UTFPR - Desenvolvedor - lsouza.santos98@gmail.com
 - Igor Scaliante Wiese      - UTFPR - Desenvolvedor - igor.wiese@gmail.com
 
 </br>
