@@ -56,10 +56,6 @@ Dessa forma, os processos de instalação e execução de cada um dos projetos (
 - [Documentação do Front-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/frontend/README.md)
 - [Documentação do Back-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/backend/README.md)
 
-#### Solução de problemas
-
-Descreva aqui caso existam problemas conhecidos, como pacotes, conflitos entre versões e se possível, como resolver ou um artigo que auxilie na solução. Caso não existir, omitir a seção.
-
 <br/>
 
 ### Equipe responsável pelo projeto 
