@@ -16,7 +16,6 @@ Este repositório contém o código-fonte do **back-end** do Alerta Brumadinho, 
 ### Pré-requisitos
 
 - [npm](https://www.npmjs.com/)
-
 - [Git](https://git-scm.com)
  
 
