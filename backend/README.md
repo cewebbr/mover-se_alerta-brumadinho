@@ -60,7 +60,7 @@ URI_MONGO_DB_SESSIONS=
 # Senha para codificação e decodificação do token de autenticação do usuário
 JWT_PASS=
 
-# Porta do aplicativo
+# Porta para execução do aplicativo
 PORT=
 
 # Chave secreta de sessão do Express
