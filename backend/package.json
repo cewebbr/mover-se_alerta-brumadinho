@@ -1,0 +1,49 @@
+{
+  "name": "alerta-brumadinho-api",
+  "version": "1.0.0",
+  "description": "Alerta Brumadinho Backend",
+  "engines": {
+    "node": "15.6.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alerta-Brumadinho/alerta-brumadinho-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alerta-Brumadinho/alerta-brumadinho-api/issues"
+  },
+  "homepage": "https://github.com/Alerta-Brumadinho/alerta-brumadinho-api#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.1",
+    "bcrypt": "^5.0.0",
+    "cnpj": "^3.1.0",
+    "connect-mongo": "^4.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fsevents": "^2.3.2",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.0",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.12.14",
+    "npm": "^7.18.1",
+    "rate-limiter-flexible": "^2.2.3",
+    "saslprep": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
+}
