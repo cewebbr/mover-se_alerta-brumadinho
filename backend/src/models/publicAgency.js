@@ -138,7 +138,7 @@ PublicAgencySchema.statics.paginateSort = async function (condition, visibility,
       {"$project": projectObj},
       {"$sort": sortObj},
       {"$match": matchObj},
-      {"$limit": parseInt(process.env.LIMIT_PER_PAGE)}
+      {"$limit": 3}
     ])
 
   } catch (err) {

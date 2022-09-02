@@ -48,7 +48,7 @@ const isCnpj = cnpj => cnpjCheck.validate(cnpj);
  * @returns Returns the generated token.
  */
 const createToken = (id) => {
-  return jwt.sign({id: id}, process.env.JWT_PASS, {expiresIn: process.env.JWT_EXPIRES_IN});
+  return jwt.sign({id: id}, process.env.JWT_PASS, {expiresIn: '7d'});
 }
 
 /**

@@ -77,7 +77,7 @@ const forgotPassword = async function (req, res) {
     });
 
     // Generating the password reset link
-    const resetPassTokenUrl = `${process.env.URL_FRONT_REDEFINE_PASSWORD}/${token}`;
+    const resetPassTokenUrl = `${process.env.URL_FRONT}/reset/${token}`;
 
     // Sending email
     sendEmail.sendEmailResetPassword({email, user, resetPassTokenUrl}, function(err) {});

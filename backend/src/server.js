@@ -5,7 +5,7 @@ require("dotenv").config();
 const helmet = require('helmet');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const { rateLimiterAll, rateLimiterCreate } = require("./middlewares/rateLimiter");
+const {rateLimiterAll, rateLimiterCreate} = require("./middlewares/rateLimiter");
 
 const PORT = process.env.PORT || 3000;
 const app = express();

@@ -205,7 +205,7 @@ DenunciationSchema.statics.paginateSort = async function (condition, sortBased, 
       }},
       {"$sort": sortObj},
       {"$match": matchObj},
-      {"$limit": parseInt(process.env.LIMIT_PER_PAGE)},
+      {"$limit": 3},
       {"$project": {"searchId": 0 }},
     ])
 

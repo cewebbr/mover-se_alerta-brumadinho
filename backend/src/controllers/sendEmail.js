@@ -2,6 +2,18 @@ const Residents = require('../models/resident');
 const sgMail = require('@sendgrid/mail');
 const utils = require('./utils');
 
+const SENDGRID_TID_AGENCY_COMMENTED='d-128da244b2c84ab386f05fbedfd6e9d9';
+const SENDGRID_TID_AGENCY_CREATED='d-4b92d976154146498c69146785e5c148';
+const SENDGRID_TID_AGENCY_ACCEPTED='d-49fff2d5cbb44dbdb861c467b886c16c';
+const SENDGRID_TID_AGENCY_REJECTED='d-717ad3d47bbf4f2ca48c2ceaf3341697';
+const SENDGRID_TID_DENUNCIATION_ACCEPTED='d-d688788d24c640159e28f7e68df144e7';
+const SENDGRID_TID_DENUNCIATION_CREATED='d-675412f46f094ccc8f808fc1094933ed';
+const SENDGRID_TID_DENUNCIATION_REJECTED='d-0b72634cd1e54406b1cc7fc0c4bbed72';
+const SENDGRID_TID_YOU_ARE_AUDITOR='d-18d0a9cea87d4208a36073ff001f6e47';
+const SENDGRID_TID_YOU_CREATED_DENUNCIATION='d-73e6c3f94e694cb38f7148ebea5d29ad';
+const SENDGRID_TID_REDEFINE_PASSWORD='d-a14d32a978704e1095f2142b2946061a';
+const SENDGRID_TID_CONFIRM_EMAIL='d-5b50ae798680446eab4052ff6c8d126f'; 
+
 /**
  * @description This function sends an email to the recipient passed by parameter.
  * @param to  Recipient's email.
@@ -42,12 +54,12 @@ const sendEmailResetPassword = async function (data, callback) {
 
   await sendEmail(
     data.email, 
-    process.env.SENDGRID_TID_REDEFINE_PASSWORD,
+    SENDGRID_TID_REDEFINE_PASSWORD,
     {
       "name": utils.getFirstName(data.user.name),
       "tokenUrl": data.resetPassTokenUrl,
       "expiresIn": "30",
-      "forgotLink": process.env.URL_FRONT_FORGOT_MY_PASSWORD
+      "forgotLink": `${process.env.URL_FRONT}/forgot`
     },
     function (err) {
       if (err) return callback(err);
@@ -68,11 +80,11 @@ const sendEmailDenunciationValidated = async function (data, callback) {
     if (err) return callback('Error fetching publisher!');
   }
 
-  var template_id = process.env.SENDGRID_TID_DENUNCIATION_REJECTED;
+  var template_id = SENDGRID_TID_DENUNCIATION_REJECTED;
   var obj = {
     "name": utils.getFirstName(publisher.name),
     "rejectionReason": data.denunciation.rejection_reason,
-    "codeOfConductUrl": process.env.URL_FRONT_CODE_OF_CONDUCT,
+    "codeOfConductUrl": `${process.env.URL_FRONT}`,
   };
 
   if (data.status == 'accepted') {
@@ -80,7 +92,7 @@ const sendEmailDenunciationValidated = async function (data, callback) {
       "name": utils.getFirstName(publisher.name),
       "denunciationUrl": `${process.env.URL_FRONT}/denunciations/${data.denunciation.searchId}`
     }
-    template_id = process.env.SENDGRID_TID_DENUNCIATION_ACCEPTED;
+    template_id = SENDGRID_TID_DENUNCIATION_ACCEPTED;
   }
 
   await sendEmail(
@@ -108,7 +120,7 @@ const sendEmailAgencyCommented = async function (data, callback) {
 
   await sendEmail(
     publisher.email, 
-    process.env.SENDGRID_TID_AGENCY_COMMENTED,
+    SENDGRID_TID_AGENCY_COMMENTED,
     {
       "name": utils.getFirstName(publisher.name),
       "agencyName": data.user.name,
@@ -139,10 +151,10 @@ const sendEmailDenunciationCreated = async function (data, callback) {
     auditors.forEach(async (auditor) => {
       await sendEmail(
         auditor.email, 
-        process.env.SENDGRID_TID_DENUNCIATION_CREATED,
+        SENDGRID_TID_DENUNCIATION_CREATED,
         {
           "name": utils.getFirstName(auditor.name),
-          "validateDenunciationsUrl": process.env.URL_FRONT_VALIDATE_DENUNCIATIONS,
+          "validateDenunciationsUrl": `${process.env.URL_FRONT}`,
         },
         function () {}
       );
@@ -163,10 +175,10 @@ const sendEmailAgencyCreated = async function (data, callback) {
     admins.forEach(async (admin) => {
       await sendEmail(
         admin.email, 
-        process.env.SENDGRID_TID_AGENCY_CREATED,
+        SENDGRID_TID_AGENCY_CREATED,
         {
           "name": utils.getFirstName(admin.name),
-          "validateAgenciesUrl": process.env.URL_FRONT_VALIDATE_AGENCIES,
+          "validateAgenciesUrl": `${process.env.URL_FRONT}`,
         },
         function () {}
       );
@@ -179,11 +191,11 @@ const sendEmailYouAreAuditor = async function (data, callback) {
   
   await sendEmail(
     data.resident.email, 
-    process.env.SENDGRID_TID_YOU_ARE_AUDITOR,
+    SENDGRID_TID_YOU_ARE_AUDITOR,
     {
       "name": utils.getFirstName(data.resident.name),
-      "codeOfConductUrl": process.env.URL_FRONT_CODE_OF_CONDUCT,
-      "validateDenunciationsUrl": process.env.URL_FRONT_VALIDATE_DENUNCIATIONS
+      "codeOfConductUrl": `${process.env.URL_FRONT}`,
+      "validateDenunciationsUrl": `${process.env.URL_FRONT}`
     },
     function (err) {
       if (err) return callback(err);
@@ -197,7 +209,7 @@ const sendEmailSearchId = async function (data, callback) {
 
   await sendEmail(
     data.publisher.email, 
-    process.env.SENDGRID_TID_YOU_CREATED_DENUNCIATION,
+    SENDGRID_TID_YOU_CREATED_DENUNCIATION,
     {
       "name": utils.getFirstName(data.publisher.name),
       "searchId": data.denunciation.searchId
