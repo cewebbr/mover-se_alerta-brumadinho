@@ -31,6 +31,7 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 - [x] Interação nas publicações da linha do tempo: Curtir e Comentar
 - [x] Interação nos comentários das publicações: Curtir
 - [x] Validar publicação (disponível apenas para usuários com permissão de validação)
+- [x] Envio de e-mails de notificação
 
 
 ### Funcionalidades em desenvolvimento
@@ -39,12 +40,12 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 - [ ] Configuração do PWA da aplicação
 - [ ] Notificações no browser
 - [ ] Definição dos Termos de Uso e Política de Uso de Dados
-- [ ] Envio de e-mails de notificação em alguns cenários específicos
+- [ ] Envio de e-mails de notificação em mais alguns cenários específicos
 
 ### Papéis dentro da plataforma
 
 -  Usuário: população de Brumadinho em geral, que pode acessar a plataforma, interagir e criar publicações.
--  Moderador: usuários específicos que possuem permissão de aferir publicações que estejam pendentes (Aprovar ou Descartar).
+-  Auditor: usuários específicos que possuem permissão de aferir publicações que estejam pendentes (Aprovar ou Descartar).
 -  Órgão Público Ambiental: tipo de usuário destinado ao órgão do município que pode interagir nas publicações dos usuários.
 -  Administrador: usuário que possui o maior nível de permissões dentro da plataforma.
 
@@ -62,7 +63,7 @@ Dessa forma, os processos de instalação e execução de cada um dos projetos (
 
 - Lucas Vinicius Ribeiro    - UTFPR - Desenvolvedor - lucasvribeiro14@gmail.com
 - Lucas Souza Santos        - UTFPR - Desenvolvedor - lsouza.santos98@gmail.com
-- Igor Scaliante Wiese      - UTFPR - Coordenador - igor.wiese@gmail.com
+- Igor Scaliante Wiese      - UTFPR - Coordenador   - igor.wiese@gmail.com
 
 </br>
 
