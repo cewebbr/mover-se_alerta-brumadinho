@@ -53,16 +53,16 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 Este repositório está subdividido em dois projetos: frontend e backend. O primeiro foi desenvolvido em React e é responsável por toda a interface de usuário do projeto, enquanto o segundo foi desenvolvido em Node, Express e Mongo, e é responsável pelo gerenciamento de toda a API do sistema.
 
 Dessa forma, os processos de instalação e execução de cada um dos projetos (frontend e backend) estão descritos nos seus respectivos diretórios:
-- [Documentação do Front-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/frontend/README.md)
-- [Documentação do Back-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/backend/README.md)
+- [Documentação do Front-end](frontend/README.md)
+- [Documentação do Back-end](backend/README.md)
 
 <br/>
 
 ### Equipe responsável pelo projeto 
 
-- Lucas Vinicius Ribeiro    - UTFPR - Coordenador - lucasvribeiro14@gmail.com
+- Lucas Vinicius Ribeiro    - UTFPR - Desenvolvedor - lucasvribeiro14@gmail.com
 - Lucas Souza Santos        - UTFPR - Desenvolvedor - lsouza.santos98@gmail.com
-- Igor Scaliante Wiese      - UTFPR - Desenvolvedor - igor.wiese@gmail.com
+- Igor Scaliante Wiese      - UTFPR - Coordenador - igor.wiese@gmail.com
 
 </br>
 
