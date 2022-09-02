@@ -84,7 +84,7 @@ const sendEmailDenunciationValidated = async function (data, callback) {
   var obj = {
     "name": utils.getFirstName(publisher.name),
     "rejectionReason": data.denunciation.rejection_reason,
-    "codeOfConductUrl": `${process.env.URL_FRONT}`,
+    "codeOfConductUrl": `${process.env.URL_FRONT}/codeOfConduct`,
   };
 
   if (data.status == 'accepted') {
@@ -154,7 +154,7 @@ const sendEmailDenunciationCreated = async function (data, callback) {
         SENDGRID_TID_DENUNCIATION_CREATED,
         {
           "name": utils.getFirstName(auditor.name),
-          "validateDenunciationsUrl": `${process.env.URL_FRONT}`,
+          "validateDenunciationsUrl": `${process.env.URL_FRONT}/audit`,
         },
         function () {}
       );
@@ -178,7 +178,7 @@ const sendEmailAgencyCreated = async function (data, callback) {
         SENDGRID_TID_AGENCY_CREATED,
         {
           "name": utils.getFirstName(admin.name),
-          "validateAgenciesUrl": `${process.env.URL_FRONT}`,
+          "validateAgenciesUrl": `${process.env.URL_FRONT}/validadeAgencies`,
         },
         function () {}
       );
@@ -195,7 +195,7 @@ const sendEmailYouAreAuditor = async function (data, callback) {
     {
       "name": utils.getFirstName(data.resident.name),
       "codeOfConductUrl": `${process.env.URL_FRONT}`,
-      "validateDenunciationsUrl": `${process.env.URL_FRONT}`
+      "validateDenunciationsUrl": `${process.env.URL_FRONT}/audit`
     },
     function (err) {
       if (err) return callback(err);
