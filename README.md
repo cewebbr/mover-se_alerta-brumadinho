@@ -10,6 +10,8 @@
 O projeto Alerta Brumadinho - Solução Tecnológica para Denúncia de Crimes Ambientais em Brumadinho, Minas Gerais faz parte da chamada pública [CGI.br/NIC.br/Ceweb.br nº 01/2019
 Mover-Se na Web – Articulação Pró-Brumadinho](https://ceweb.br/projetos/chamada.html)
 
+**Acessar a Demo:** https://alertabrumadinho.netlify.app/
+
 [![Software License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/lucasvribeiro/mover-se_alerta-brumadinho)
 
 #  Descrição do Projeto
