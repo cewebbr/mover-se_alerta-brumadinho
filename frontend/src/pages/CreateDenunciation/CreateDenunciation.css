@@ -1,0 +1,51 @@
+@media only screen and (max-width: 500px) {
+  .create-denunciation-container {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+    padding-bottom: 10vh !important;
+    height: fit-content !important;
+  }
+
+  .map-create-denunciation {
+    height: 280px !important;
+  }
+
+  .map-container {
+    height: 280px !important;
+    width: 100%;
+  }
+}
+
+.map-create-denunciation {
+  height: 360px !important;
+}
+
+.map-container {
+  height: 360px;
+  width: 100%;
+}
+
+.steps-action {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.steps-content {
+  margin: 16px 0 12px 0;
+}
+
+.alert-not-logged {
+  margin-top: 16px;
+}
+
+.my-stepper {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}

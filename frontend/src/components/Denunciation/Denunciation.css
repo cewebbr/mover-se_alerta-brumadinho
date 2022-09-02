@@ -1,0 +1,129 @@
+@media only screen and (max-width: 500px) {
+  .denunciation-card {
+    width: 90vw !important;
+    left: 5vw !important;
+  }
+
+  .comments-card {
+    width: 90vw !important;
+    left: 5vw !important;
+  }
+
+  .denunciation-card-image {
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+
+.denunciation-card {
+  width: 40vw;
+  margin-bottom: 8px;
+}
+
+.denunciation-card-publisher-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: #666666;
+}
+
+.denunciation-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.denunciation-card-title div:nth-child(1) {
+  font-weight: bold;
+}
+
+.denunciation-card-description {
+  margin-bottom: 32px;
+}
+
+.denunciation-card-media {
+  margin-bottom: 32px;
+}
+
+.denunciation-card-image {
+  max-width: 38vw;
+  min-width: 38vw;
+}
+
+.denunciation-card-likes-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.denunciation-card-publisher {
+  display: flex;
+  align-items: center;
+}
+
+.comments-card {
+  width: 40vw;
+  margin-bottom: 8px;
+}
+
+.comments-card-residents {
+  margin-bottom: 32px !important;
+}
+
+.new-comment-container {
+  margin-top: 16px;
+  display: flex;
+}
+
+.new-comment-input {
+  margin: 0 4px 0 8px;
+  width: 80%;
+}
+
+.comments-empty {
+  color: #dddddd;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.denunciation-card-audit-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.comment-container {
+  display: flex;
+}
+
+.comment-publisher {
+  font-weight: bold;
+  color: #666666;
+}
+
+.comment-like-container {
+  display: flex;
+  margin-left: 4px;
+  color: #666666;
+  padding-bottom: 8px;
+}
+
+.comment-publisher-container {
+  background-color: #eeeeee;
+  padding: 8px 12px 12px 12px;
+  margin-bottom: 4px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.like-comment-button {
+  cursor: pointer;
+  color: #666666;
+}
+
+.like-comment-button:hover {
+  text-decoration: underline;
+}
+
+.liked {
+  font-weight: bold;
+  color: #338221;
+}
