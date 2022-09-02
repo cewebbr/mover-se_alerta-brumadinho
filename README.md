@@ -49,6 +49,8 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 -  Órgão Público Ambiental: tipo de usuário destinado ao órgão do município que pode interagir nas publicações dos usuários.
 -  Administrador: usuário que possui o maior nível de permissões dentro da plataforma.
 
+**Observação:** Todos os usuários, publicações e interações existentes hoje na plataforma correpondem aos testes que estão sendo feitos. A aplicação ainda não está disponível em ambiente de produção para o público em geral.
+
 #  Instalação
 
 Este repositório está subdividido em dois projetos: frontend e backend. O primeiro foi desenvolvido em React e é responsável por toda a interface de usuário do projeto, enquanto o segundo foi desenvolvido em Node, Express e Mongo, e é responsável pelo gerenciamento de toda a API do sistema.
