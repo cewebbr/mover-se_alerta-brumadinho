@@ -10,119 +10,61 @@
 O projeto Alerta Brumadinho - Solução Tecnológica para Denúncia de Crimes Ambientais em Brumadinho, Minas Gerais faz parte da chamada pública [CGI.br/NIC.br/Ceweb.br nº 01/2019
 Mover-Se na Web – Articulação Pró-Brumadinho](https://ceweb.br/projetos/chamada.html)
 
-<p>Abaixo, liste a licença/s para o projeto. Lembre-se que todas as soluções devem possuir uma licença de código aberto, assim como todos os produtos produzidos com o aporte oferecido pelo Ceweb.br | NIC.br | CGI.br. </p>
+[![Software License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/lucasvribeiro/mover-se_alerta-brumadinho)
 
+#  Descrição do Projeto
 
-# Escolhendo a licença para o projeto 
+O projeto Alerta Brumadinho é uma plataforma voltada para a população de Brumadinho registrar ocorrências que agridem de alguma forma o meio-ambiente do município. O objetivo da plataforma é servir como um portal onde a população pode expor problemas ambientais que estejam ocorrendo no município a fim de dar maior visibilidade a esses problemas. Também é possível, através da plataforma, que o órgão ambiental responsável pelo município interaja com aquilo que está sendo publicado pelos usuários, de modo a proporcionar, quando necessário, uma interação entre o setor público do município e a população.
 
-Uma vez definida, exclua essa seção, deixando apenas a indicação do "badge" da licença e o arquivo `LICENSE` dentro do repositório.
-
-Saiba mais sobre licenças de software:
-- [Como escolher uma licença para seu projeto
-](https://www.alura.com.br/artigos/como-escolher-uma-licenca-para-seu-projeto)
-- [Choose an open source license](https://choosealicense.com/)
-- [Como escolher uma licença para sua própria obra](https://www.gnu.org/licenses/license-recommendations.pt-br.html)
-
-Exemplo - MIT License
-
-[![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mas-cli/mas/blob/main/LICENSE)
-
-Os badges podem ser criados ou retirados do [License Shields](https://shields.io/category/license)
-
-<br/>
-
-#  Descrição da solução
-
-Aqui você deve adicionar uma descrição do projeto. Texto corrido, não maior que ~600 caracteres e/ou ~100 palavras.
+Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as publicações feitas pelos usuários sejam aferidas antes de se tornarem públicas, com intuito de não permitir a publicação de conteúdos como nudez e pornografia, incitação à violência, discurso de ódio, etc. 
 
 ### Funcionalidades ativas
+- [x] Cadastro de usuário
+- [x] Recuperação de senha do usuário
+- [x] Acessar sem cadastro
+- [x] Fazer login de usuário e órgão ambiental
+- [x] Solicitação de cadastro de órgão ambiental
+- [x] Linha do tempo das publicações
+- [x] Busca de publicação por código identificador
+- [x] Ordenação das publicações por "Mais recentes" ou "Mais relevantes"
+- [x] Cadastro de nova publicação
+- [x] Interação nas publicações da linha do tempo: Curtir e Comentar
+- [x] Interação nos comentários das publicações: Curtir
+- [x] Validar publicação (disponível apenas para usuários com permissão de validação)
 
-- [x] Cadastro de criação de usuário
-- [x] Cadastro de Denúncia
-- [x] Cadastro de uma fonte
 
 ### Funcionalidades em desenvolvimento
-- [x] Moderação de comentários
-- [x] Moderação de ativos
+- [ ] Tela para visualização de uma publicação específica
+- [ ] Compartilhamento de publicação em outros canais sociais (Whatsapp, Facebook, etc)
+- [ ] Configuração do PWA da aplicação
+- [ ] Notificações no browser
+- [ ] Definição dos Termos de Uso e Política de Uso de Dados
+- [ ] Envio de e-mails de notificação em alguns cenários específicos
 
-### Papeis e suas descrições
+### Papéis dentro da plataforma
 
--  Usuário: Uma breve descrição sobre os papeis do usuário na operação do sistema.
--  Moderador: Uma breve descrição sobre os papeis do Moderador na operação do sistema.
--  Administrador: Uma breve descrição sobre os papeis do Administrador na operação do sistema.
+-  Usuário: população de Brumadinho em geral, que pode acessar a plataforma, interagir e criar publicações.
+-  Moderador: usuários específicos que possuem permissão de aferir publicações que estejam pendentes (Aprovar ou Descartar).
+-  Órgão Público Ambiental: tipo de usuário destinado ao órgão do município que pode interagir nas publicações dos usuários.
+-  Administrador: usuário que possui o maior nível de permissões dentro da plataforma.
 
 #  Instalação
 
-### Tecnologias utilizadas
+Este repositório está subdividido em dois projetos: frontend e backend. O primeiro foi desenvolvido em React e é responsável por toda a interface de usuário do projeto, enquanto o segundo foi desenvolvido em Node, Express e Mongo, e é responsável pelo gerenciamento de toda a API do sistema.
 
-Liste aqui as tecnologias utilizadas no projeto como o modelo abaixo.
-
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-
-
-## Executando a aplicação
-
-### Pré-requisitos (Software e/ou Hardware)
-
-Liste aqui todos os pré-requisitos no modelo abaixo.
-
-- [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/). 
-
-
-### 1. No terminal
-
-```bash
-# Clone este repositório
-$ git clone https://github.com/cewebbr/template_mover-se
-
-# Acesse a pasta do projeto no terminal
-$ cd template_mover-se
-
-# Crie um arquivo `.env` na raiz do projeto
-
-$ cp .env-exemple .env
-
-# Instale as dependências
-$ pip install -r requirements.txt
-
-```
-
-###  2. Configuração das variáveis de ambientes
-
-Abra o arquivo `.env` na raiz do projeto e configure as variáveis de ambiente
-
-```
-twitter_api_key=""
-twitter_api_secret=""
-secret=""
-DATABASE_URL=""
-```
-###  3. Executando a aplicação
-```bash
-# Execute a aplicação em modo de desenvolvimento
-$ python server.py
-
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
-```
-
-</br>
-
-#### Solução de problemas
-
-Descreva aqui caso existam problemas conhecidos, como pacotes, conflitos entre versões e se possível, como resolver ou um artigo que auxilie na solução. Caso não existir, omitir a seção.
+Dessa forma, os processos de instalação e execução de cada um dos projetos (frontend e backend) estão descritos nos seus respectivos diretórios:
+- [Documentação do Front-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/frontend/README.md)
+- [Documentação do Back-end](https://github.com/cewebbr/mover-se_alerta-brumadinho/tree/main/backend/README.md)
 
 <br/>
 
 ### Equipe responsável pelo projeto 
 
-- Ana Maria         - UFRJ - Coordenadora - ana@email.com.br
-- João da Silva     - UFMG - Pessoa desenvolvedora - joao@email.com.br
-- Luciana de Souza  - UFPR - Pessoa desenvolvedora - luciana@email.com.br
+- Lucas Vinicius Ribeiro    - UTFPR - Coordenador - lucasvribeiro14@gmail.com
+- Lucas Souza Santos        - UTFPR - Desenvolvedor - lsouza.santos98@gmail.com
+- Igor Scaliante Wiese      - UTFPR - Desenvolvedor - igor.wiese@gmail.com
 
 </br>
-
 
 # Sobre o [Ceweb.br](https://ceweb.br/sobre-o-ceweb-br/), [NIC.br](https://www.nic.br/sobre/) e [CGI.br](https://cgi.br/sobre/)
 
