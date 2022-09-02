@@ -49,7 +49,7 @@ Vale ressaltar que a plataforma disponibiliza uma funcionalidade para que as pub
 -  Órgão Público Ambiental: tipo de usuário destinado ao órgão do município que pode interagir nas publicações dos usuários.
 -  Administrador: usuário que possui o maior nível de permissões dentro da plataforma.
 
-Observação: Todos os usuários, publicações e interações existentes hoje na plataforma correpondem aos testes que estão sendo feitos. A aplicação ainda não está disponível em ambiente de produção para o público em geral.
+**Observação:** Todos os usuários, publicações e interações existentes hoje na plataforma correpondem aos testes que estão sendo feitos. A aplicação ainda não está disponível em ambiente de produção para o público em geral.
 
 #  Instalação
 
