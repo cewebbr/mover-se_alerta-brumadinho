@@ -1,0 +1,160 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header h1 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 54px;
+  z-index: 1;
+}
+
+.home-header p {
+  color: #ffffff;
+  font-size: 24px;
+  z-index: 1;
+  width: 70%;
+}
+
+.home-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-footer p {
+  color: #ffffff;
+  font-size: 16px;
+  z-index: 1;
+  width: fit-content;
+  margin: 0 0 10px 8px;
+}
+
+.left-container {
+  background-color: #fff;
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  padding: 80px 0 60px 80px;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layer-background {
+  opacity: 0.7;
+  background-color: #14350d;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+}
+
+.teste {
+  width: 180px;
+}
+
+.right-container {
+  width: 30vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-content {
+  width: calc(30vw - 8vw);
+  height: 100vh;
+}
+
+.logo {
+  width: 30vw;
+  height: 28vw;
+  max-width: 100px;
+  max-height: 90px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-height: 700px) {
+  .right-content {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .right-content {
+    width: calc(100vw - 20vw) !important;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .home-container {
+    flex-direction: column;
+    height: fit-content !important;
+  }
+
+  .left-container {
+    background-size: auto;
+    background-position-y: -2000px;
+
+    padding: 0px;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layer-background {
+    opacity: 0.7;
+    background-color: #14350d;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+  }
+
+  .home-header h1,
+  .home-header p {
+    display: none;
+  }
+
+  .home-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .home-footer p {
+    margin: 0 10px;
+  }
+
+  .right-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-content {
+    width: calc(100vw - 60vw);
+    height: fit-content;
+  }
+
+  .teste {
+    width: 160px;
+  }
+  
+}

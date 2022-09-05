@@ -1,0 +1,33 @@
+@media only screen and (max-width: 500px) {
+  .searchbar-container {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+  }
+
+  .empty-card {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+  }
+}
+
+.searchbar-container {
+  width: 40vw;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.searchbar-input {
+  width: 240px;
+  margin-right: 6px;
+}
+
+.empty-card {
+  width: 40vw;
+  color: #cccccc;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

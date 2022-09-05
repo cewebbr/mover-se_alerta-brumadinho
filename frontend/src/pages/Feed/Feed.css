@@ -1,0 +1,59 @@
+.order-by-container {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+}
+
+.create-denunciation-button {
+  position: absolute !important;
+  left: calc(260px + 12vw);
+  top: 32px;
+}
+
+.skeleton-container {
+  width: 40vw;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+}
+
+.that-is-call-card {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  width: 40vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .create-denunciation-button {
+    position: fixed !important;
+    left: auto !important;
+    top: auto !important;
+    right: 24px !important;
+    bottom: 62px !important;
+  }
+
+  .create-denunciation-button span:nth-child(2) {
+    display: none;
+  }
+
+  .skeleton-container {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+  }
+
+  .that-is-call-card {
+    width: 80vw !important;
+  }
+
+  .order-by-container {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+  }
+}

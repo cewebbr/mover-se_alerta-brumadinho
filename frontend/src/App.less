@@ -1,0 +1,84 @@
+@import "~antd/dist/antd.less";
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@200..900&display=swap");
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot");
+  src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book")
+      format("svg");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo-small {
+  width: 15vw;
+  height: 13vw;
+  max-width: 50px;
+  max-height: 46px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-box {
+  width: 500px;
+  height: fit-content;
+  overflow-y: hidden;
+  top: 6vh;
+  margin-bottom: 50px;
+  padding: 16px 32px 32px 32px;
+  box-shadow: rgba(31, 45, 61, 0.25) 0px 0px 1.25rem;
+}
+
+.secondary-button {
+  color: #338221;
+  border-color: #338221;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 500px) {
+  .card-box {
+    width: calc(100% - 30px);
+    padding: 8px 0 16px 0;
+  }
+
+  .main-layout-content {
+    left: 0 !important;
+    width: 100vw !important;
+    padding: 54px 0 0 0 !important;
+  }
+  
+}
+
+.main-layout-content {
+  left: 260px;
+  position: relative;
+  width: calc(100vw - 265px);
+  padding: 32px 64px 0px 64px;
+  height: 100vh;
+}

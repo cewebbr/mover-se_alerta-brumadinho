@@ -1,0 +1,8 @@
+.ant-form-item-label {
+    padding: 0 !important;
+}
+
+.card-register {
+    height: 85vh;
+    overflow-y: scroll;
+}
